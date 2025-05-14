@@ -12,19 +12,19 @@
   <header>
     <h1>How to Fold a Paper Airplane</h1>
     <nav>
-      <a href="#materials">Materials</a> | <a href="steps">Folding Steps</a> | <a href="#Tip">Tips</a>
+      <a href="#materials">Materials</a> | <a href="#steps">Folding Steps</a> | <a href="#tip">Tips</a><!-- Added '#' to the steps to properly connect it to the corresponding ID -->
     </nav>
   </header>
   <section id="intro">
-    <h2>Introduction
+    <h2>Introduction</h2><!-- Added a closing to this header 2 -->
       <p>Folding a paper airplane is easy and fun! Follow these steps to create your own airplane.</p>
       <img src="airplane.png" alt="Paper Airplane">
-  </section>
-  <section id=materials>
+      </section><!-- Added a closing tag to the image -->
+  <section id="materials"><!-- Needs quotes, "materials" -->
     <h2>Materials Needed</h2>
     <ul>
       <li>1 sheet of paper</li>
-      <l1>A flat surface to fold the paper</l1>
+      <l1>A flat surface to fold the paper</l1><!-- Needs to be list item, 'li'. Not list one, 'l1' -->
     </ul>
   </section>
   <section id="steps">
@@ -36,19 +36,20 @@
       <li>Fold the top edges again to the center.</li>
       <li>Fold the plane in half lengthwise.</li>
       <li>Fold the wings down, matching the top edges of the wings with the bottom edge of the body.</li>
-      </ul>
+    </ol><!-- Needs to correspond to opening, so changed it from '/ul', to '/ol' -->
   </section>
-  <section id="tips">
+  <section id="tips"><!-- Changed the case of 'T' to 't' to match it's call on line 15 -->
     <h2>Extra Tips</h2>
     <ul>
       <li>Make sure your folds are as sharp as possible.</li>
       <li>This airplane has stiff wings and can tolerate fast throwing speeds.</li>
-    </ul>
-    <li>Throw it as hard as you can for maximum distance and speed.</li>
+      <li>Throw it as hard as you can for maximum distance and speed.</li>
+    </ul><!-- Switched these two lines because the unordered list closed but had a list item on the outside of it -->
+    
   </section>
   <hr>
   <footer>
-    <a herf="www.foldnfly.com">Learn more about paper airplanes</a>
+    <a href="https://www.foldnfly.com">Learn more about paper airplanes</a><!-- href was misspelled, 'herf' now 'href' --><!-- This line also needs the url to start with https:// -->
     <p>&copy; 2024</p>
   </footer>
 </body>
