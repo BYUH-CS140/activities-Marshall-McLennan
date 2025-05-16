@@ -5,47 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animals</title>
     <style>
-        .highlight{
-            background-color: yellow;
+        body{
+            background-color: black;
+            color: aliceblue;
+        }
+        .pFollowingImages{    
             text-align: center;
         }
-        div {
-            background-color: black;
-        }
-        #mainHeader {
-            font-size: 24px;
+        h1 {
+            font-size: 40px;
             font-weight: bold;
             text-align: center;
             color: #FFD700;
         }
-        header{
-            background-color: #030303;
-        }
-        footer{
-            background-color: #333;
+        .LeavesBackground{
+            background-image: url("Images/autumn_leaves.jpg");
+            padding: 10px 10px 10px 10px;
         }
         img{
-            width: 16%;
-            padding: 10px 10px 10px 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding: 10px 0px 10px
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1 id="mainHeader">Cool looking animals</h1>  
+    <header class="LeavesBackground">
+        <h1>Cool looking animals</h1>  
     </header>
+
+    <section>
+        <h2>What are Animals?</h2>
+        <p>According to the Cambridge Dictionary an animal is a living thing that can move and eat and react to the world through its senses, esp. of sight and hearing:
+            <ul>
+                <li>
+                    Mammals
+                </li>
+                <li>
+                    Insects
+                </li>
+                <li>
+                    Reptiles
+                </li>
+                <li>
+                    Birds
+                </li>
+            </ul>
+        </p>
+    </section>
 
     <div>
         <img src="Images/bunny.jpg" alt="A bunny">
+        <p class="pFollowingImages">This is a bunny</p>
         <img src="Images/cat.jpg" alt="A cat">
+        <p class="pFollowingImages">This is a cat</p>
         <img src="Images/fox.jpg" alt="A fox">
+        <p class="pFollowingImages">This is a fox</p>
         <img src="Images/sheep.jpg" alt="A sheep">
+        <p class="pFollowingImages">This is some sheep</p>
         <img src="Images/wolf.jpg" alt="A wolf">
-        <img src="Images/yak.jpg" alt="A yak">
+        <p class="pFollowingImages">This is a wolf</p>
     </div>
 
-    <footer class="highlight">
-        <p>Animals are so cool</p>
+    <footer class="LeavesBackground">
+        <h1>Animals are so cool</h1>
     </footer>
     
 </body>
