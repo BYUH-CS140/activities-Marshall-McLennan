@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.pFollowingImages{    
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFD700;
+}
+.LeavesBackground{
+    background-image: url("../Images/autumn_leaves.jpg");
+    padding: 10px 10px 10px 10px;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px 0px 10px;
+    border-radius: 80px;
+}
+div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: #333;
+}
+
+div li {
+  float: left;
+}
+
+div li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+div li a:hover {
+  background-image: #111;
+}
