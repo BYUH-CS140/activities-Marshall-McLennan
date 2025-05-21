@@ -4,16 +4,36 @@ body{
 }
 .pFollowingImages{    
     text-align: center;
+    background-color: #333;
+    padding: 10px 0px 10px;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 h1 {
     font-size: 40px;
     font-weight: bold;
     text-align: center;
-    color: #FFD700;
+    color: white;
 }
 .LeavesBackground{
     background-image: url("../Images/autumn_leaves.jpg");
     padding: 10px 10px 10px 10px;
+}
+* {
+  box-sizing: border-box;
+  margin:auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 img{
     display: block;
@@ -22,13 +42,16 @@ img{
     width: 50%;
     padding: 10px 0px 10px;
     border-radius: 80px;
+    
 }
+
 div ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-image: #333;
+  background-color: #333;
+  
 }
 
 div li {
@@ -44,5 +67,13 @@ div li a {
 }
 
 div li a:hover {
-  background-image: #111;
+  background-color: #111;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
