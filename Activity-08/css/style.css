@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    color:white;
+}
+body{
+    font-family:"Segoe UI", Arial,sans-serif;
+    background-color: black;  
+}
+/*The header*/
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-image: url("../Images/autumn_leaves.jpg");
+    background-size:cover;
+    padding:1rem;
+}
+
+/*The footer*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("../Images/autumn_leaves.jpg");
+    background-size:cover;
+    text-align: center;
+  }
+
+.title{
+    font-size:2rem;
+    letter-spacing: 0.05em;
+}
+/*The navigation bar style*/
+.nav-list{
+    list-style:none;
+    display:flex;
+    gap:1rem;
+}
+.nav-list > li{
+    padding: 0.25rem 0.75rem;
+    border-radius:6px;
+    width:60%;
+}
+.nav-list a{
+    font-size:1rem;
+}
+.nav-list a:hover{
+    color: #333333;
+    background:#ffffff;
+}
+
+/*A secondary list for comparison*/
+.resources{
+    padding:1rem;
+    border-radius:6px;
+    width:60%;
+}
+.resources li{
+    margin-bottom:0.5rem;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
