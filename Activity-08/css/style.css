@@ -1,81 +1,105 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family:"Segoe UI", Arial,sans-serif; 
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
 }
-/*The header*/
+
+/* The header */
 h1 {
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    background-image: url("../Images/autumn_leaves.jpg");
-    background-size:cover;
-    padding:1rem;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  background-image: url("../Images/autumn_leaves.jpg");
+  background-size: cover;
+  padding: 1rem;
+  color: white;
 }
 
-/*The footer*/
+/* The footer */
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-image: url("../Images/autumn_leaves.jpg");
-    background-size:cover;
-    text-align: center;
-  }
-
-.title{
-    font-size:2rem;
-    letter-spacing: 0.05em;
-}
-/*The navigation bar style*/
-.nav-list{
-    list-style:none;
-    display:flex;
-    gap:1rem;
-}
-.nav-list > li{
-    padding: 0.25rem 0.75rem;
-    border-radius:6px;
-    width:60%;
-}
-.nav-list a{
-    font-size:1rem;
-}
-.nav-list a:hover{
-    color: #333333;
-    background:#ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: url("../Images/autumn_leaves.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 1rem;
+  color: white;
 }
 
-/*A secondary list for comparison*/
-.resources{
-    padding:1rem;
-    border-radius:6px;
-    width:60%;
+/* Title styling */
+.title {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
 }
-.resources li{
-    margin-bottom:0.5rem;
+
+/* Navigation bar improvements */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #333;
+  padding: 0.5rem 1rem;
 }
+
+.nav-list > li {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  /* Removed width: 60% */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional enhanced styling */
+}
+
+.nav-list a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+  display: block;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #333333;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+/* A secondary list for comparison */
+.resources {
+  padding: 1rem;
+  border-radius: 6px;
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.resources li {
+  margin-bottom: 0.5rem;
+}
+
+/* Animated image block */
 div {
-    position: fixed;
-    left: 0;
-    bottom: 70px;
-    width: 500px;
-    height: 300px;
-    background-image: url(../Images/jump2.jpg);
-    background-size: fill;
-    animation-name: example;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes example {
-    0%  {background-image:url(../Images/jump2.jpg);}
-    30%  {background-image:url(../Images/jump3.jpg);}
-    75%  {background-image:url(../Images/jump4.jpg);}
-    90% {background-image:url(../Images/jump5.jpg);}
-    100%  {background-image:url(../Images/jump6.jpg);}
-  }
+  position: fixed;
+  left: 0;
+  bottom: 70px;
+  width: 500px;
+  height: 300px;
+  background-image: url(../Images/jump2.jpg);
+  background-size: cover; /* Fixed incorrect value */
+  animation-name: example;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   { background-image: url(../Images/jump2.jpg); }
+  30%  { background-image: url(../Images/jump3.jpg); }
+  75%  { background-image: url(../Images/jump4.jpg); }
+  90%  { background-image: url(../Images/jump5.jpg); }
+  100% { background-image: url(../Images/jump6.jpg); }
+}
