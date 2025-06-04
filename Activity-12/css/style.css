@@ -1,0 +1,25 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
+    gap: 10px;
+    background-color: rgb(21, 52, 78);
+    color:black;
+    padding: 10px;
+}
+
+.grid-item:first-child{
+    grid-column: 1/7;
+    background-color: rgb(19, 228, 228);
+}
+
+.grid-item:last-child{
+    grid-column: 1/7;
+    background-color: rgb(21, 233, 187);
+}
+
+.grid-item{
+    background-color: rgb(61, 178, 207);
+    padding: 20px;
+    text-align:center;
+    font-size: 1.2rem;
+}
