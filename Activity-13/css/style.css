@@ -1,0 +1,71 @@
+/* Base styles for < 768px */
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 1rem;
+  color: #333;
+  background: #fff;
+}
+
+header, nav, main, footer {
+  margin-bottom: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* Tablet breakpoint (≥ 768px) */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  main {
+    display: flex;
+    gap: 2rem;
+  }
+
+  section {
+    flex: 1;
+  }
+}
+
+/* Desktop breakpoint (≥ 1024px) */
+@media (min-width: 1024px) {
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  main {
+    flex-direction: row;
+  }
+
+  header, footer {
+    text-align: center;
+  }
+}
