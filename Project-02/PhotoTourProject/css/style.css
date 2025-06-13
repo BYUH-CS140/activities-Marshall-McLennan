@@ -1,0 +1,130 @@
+
+body {
+  background-color: black;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.LeavesBackground {
+  background-image: url("../Images/autumn_leaves.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+}
+
+nav li {
+  display: block; 
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+section {
+  padding: 20px;
+  margin: 10px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.row {
+  display: block;
+}
+
+.column {
+  width: 100%;    
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.pFollowingImages {
+  text-align: center;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+  nav li {
+    float: left;
+  }
+
+  nav ul {
+    overflow: hidden;
+  }
+
+   .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    width: 50%; 
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+  .column {
+    padding: 20px;
+  }
+
+  section {
+    margin: 40px auto;
+    max-width: 900px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
