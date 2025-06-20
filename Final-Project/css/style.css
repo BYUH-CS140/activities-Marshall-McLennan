@@ -1,11 +1,10 @@
 /* Base (mobile-first) */
 body {
   font-family: 'Georgia', serif;
-  background-color: #FAF4EF;
-  color: #3E3E3E;
+  background-color: #3E3E3E;
+  color: #FAF4EF;
   margin: 0;
   padding: 0;
-  margin-top: 100px;
 }
 
 header, footer {
@@ -15,13 +14,7 @@ header, footer {
   color: #FAF4EF;
 }
 
-header{
-  background-color: #6D6875; /* Cozy mauve-gray */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
+
 
 footer {
   position: fixed;
@@ -32,15 +25,41 @@ footer {
 }
 
 .forest {
-  background-image: url("../Images/forest.jpg");
+  background-image: url("../images/forest.jpg");
   background-size: cover;
   background-position: center;
   padding: 10px;
   color: #FAF4EF;
 }
+
+.classroom {
+  background-image: url("../images/classroom.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  color: #FAF4EF;
+}
+
+.bedroom {
+  background-image: url("../images/bedroom.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  color: #FAF4EF;
+}
+
+.sunset {
+  background-image: url("../images/sunset.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  color: #FAF4EF;
+}
+
+
 nav{
   padding:20px;
-
+  
 }
 /* Sidebar */
 nav ul {
@@ -48,6 +67,7 @@ nav ul {
   margin: 0;
   padding: 0;
   background-color: #6D6875;
+  border-radius: 10px;
 }
 
 nav li {
@@ -56,7 +76,7 @@ nav li {
 
 nav li a {
   display: block;
- color: #FFE8D6;
+  color: #FFE8D6;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -64,6 +84,7 @@ nav li a {
 
 nav li a:hover {
   background-color: #111;
+  border-radius: 10px;
 }
 
 nav::after {
@@ -74,6 +95,7 @@ nav::after {
 nav li a.active {
   background-color: #A5A58D; /* Sage green */
   color: white;
+  border-radius: 10px;
 }
 
 nav li a:hover:not(.active) {
@@ -83,13 +105,14 @@ nav li a:hover:not(.active) {
 
 /* Scripture Rotator */
 .scripture-rotator {
-  background-color: #DDBEA9; /* Cozy accent */
-  color: white;
-  border-radius: 10px;
+  background-color: #FAF4EF;
+  color: #3E3E3E;
+  border-radius: 30px;
   text-align: center;
   margin: auto;
   padding: 20px;
   width: 80%;
+  border-left: 20px solid  #A5A58D;
 }
 
 /* Main content */
