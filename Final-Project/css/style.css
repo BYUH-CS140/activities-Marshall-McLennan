@@ -1,33 +1,53 @@
-
+/* Base (mobile-first) */
 body {
-  background-color: black;
-  color: aliceblue;
+  font-family: 'Georgia', serif;
+  background-color: #FAF4EF;
+  color: #3E3E3E;
   margin: 0;
   padding: 0;
+  margin-top: 100px;
 }
 
 header, footer {
   text-align: center;
   padding: 10px;
+  margin: auto;
+  color: #FAF4EF;
 }
 
-.LeavesBackground {
-  background-image: url("../Images/autumn_leaves.jpg");
+header{
+  background-color: #6D6875; /* Cozy mauve-gray */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #6D6875;
+}
+
+.forest {
+  background-image: url("../Images/forest.jpg");
   background-size: cover;
   background-position: center;
   padding: 10px;
+  color: #FAF4EF;
 }
-
-h1 {
-  font-size: 32px;
+nav{
+  padding:20px;
+  
 }
-
-
+/* Sidebar */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #333;
+  background-color: #6D6875;
 }
 
 nav li {
@@ -36,7 +56,7 @@ nav li {
 
 nav li a {
   display: block;
-  color: white;
+ color: #FFE8D6;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -51,15 +71,65 @@ nav::after {
   display: table;
   clear: both;
 }
-
-
-section {
-  padding: 20px;
-  margin: 10px;
-  background-color: #333;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+nav li a.active {
+  background-color: #A5A58D; /* Sage green */
+  color: white;
 }
 
+nav li a:hover:not(.active) {
+  background-color: #E5989B; /* Soft rose */
+  color: white;
+}
 
+/* Scripture Rotator */
+.scripture-rotator {
+  background-color: #DDBEA9; /* Cozy accent */
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
 
+/* Main content */
+.main-content {
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.preview ul li {
+  margin-bottom: 8px;
+}
+
+/* Tablet View */
+@media (min-width: 768px) {
+  nav li {
+    float: left;
+  }
+
+  nav ul {
+    overflow: hidden;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .verse-box, .journal {
+    flex: 1 1 45%;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .verse-box, .journal, .music-controls {
+    flex: 1 1 30%;
+  }
+}
