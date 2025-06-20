@@ -40,7 +40,7 @@ footer {
 }
 nav{
   padding:20px;
-  
+
 }
 /* Sidebar */
 nav ul {
@@ -96,6 +96,7 @@ nav li a:hover:not(.active) {
 .main-content {
   padding: 1px 16px;
   height: 1000px;
+  margin-bottom: 30px;
 }
 
 .preview ul li {
