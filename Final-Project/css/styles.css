@@ -1,0 +1,309 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Make html and body take full height and use flex column */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.55;
+  color: #d8dee9b1;
+  background: #1E1E2F;
+}
+
+h1, h2 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+/* Header and NavBar */
+header {
+  padding: 1rem .75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #5d6476;
+  color: #fff;
+}
+
+header h1 {
+  margin: .25rem 0 0;
+  letter-spacing: .05em;
+}
+
+.tagline {
+  font-size: .9rem;
+  opacity: .8;
+  margin-bottom: .75rem;
+}
+
+nav {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  width: 100%;
+  max-width: 36rem;
+  position: relative;
+}
+
+#menu-toggle {
+  font-size: 1.5rem;
+  padding: .25rem .5rem;
+  border: none;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;          
+  flex-direction: column;
+  gap: .5rem;
+}
+
+#nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: .5rem 0;
+  border-radius: 1.25rem;
+  transition: background 250ms ease;
+}
+
+#nav-links a:hover,
+#nav-links a:focus {
+  background: rgba(255,255,255,.15);
+}
+
+
+/* hero(attention graber) section */
+.hero {
+  text-align: center;
+  padding: 2rem .75rem 2.5rem;
+  background: url("/Final-Project/images/mountain1.jpg") center/cover no-repeat;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.hero h2 {
+  font-size: clamp(1.6rem, 6vw, 2.5rem);
+  margin: 0 0 .75rem;
+}
+
+.hero #scriptureBox {
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 0.75rem;
+  min-width: 700px;
+}
+
+.hero .study-container {
+  color:#1E1E2F;
+}
+
+.hero p {
+  margin: 0 auto 1.5rem;
+  max-width: 32ch;
+  font-size: 1rem;
+}
+
+.cta {
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  border-radius: 1.25rem;
+  background: #81A1C1;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  transition: transform  250ms ease;
+}
+.cta:hover,
+.cta:focus {
+  transform: translateY(-2px);
+}
+
+#scriptureBox {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  font-style: italic;
+  color: #444;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.center-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/Final-Project/images/landscape.jpg") center/cover no-repeat;
+  padding:20px;
+}
+
+.journal-container {
+  background: white;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quote-box {
+  color:rgb(38, 37, 37);
+  font-style: italic;
+  background-color: #fdfcfb;
+  padding: 1rem;
+  border-left: 4px solid #81A1C1;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.feedback-container {
+  background: #5C5676;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.study-title {
+  text-align: center;
+  margin: 2rem 0;
+  color: #fff;
+}
+
+.study-title h2{
+  font-size: clamp(1.6rem, 6vw, 2.5rem);
+  margin: 0 0 .75rem;
+}
+
+.study-title p {
+  margin: 0 auto 1.5rem;
+  max-width: 32ch;
+  font-size: 1rem;
+}
+.study-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+  gap:2rem;
+  max-width:1200px;
+  margin:0 auto;
+}
+
+.card{
+  background: rgb(38, 37, 37);
+  border-radius:1rem;
+  padding:2rem;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+textarea {
+  width: 100%;
+  height: 250px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  resize: vertical;
+}
+
+input {
+  width:100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #fdfcfb;
+}
+
+button {
+  margin-top: 1rem;
+  color: #5C5676;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8d7462;
+}
+
+label {
+  margin-top: 1rem;
+  font-weight: bold;
+  padding: 2rem;
+}
+
+ul.tips-list {
+  padding-left: 1.5rem;
+  list-style: disc;
+  margin: 0;
+}
+
+.game { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; padding:1.5rem; }
+
+#gameCanvas { border:2px solid black; background:#fff; }
+#scoreBoard { font-size:1.2rem; font-weight:bold; }
+#resetBtn {
+  background: black; color:#fff; border:none; padding:.6rem 1.25rem; border-radius:.5rem; cursor:pointer;
+}
+#resetBtn:hover { background:#92736f; }
+
+/* 5. FOOTER */
+footer {
+  flex-shrink: 0;
+  text-align: center;
+  padding: 1.75rem .75rem;
+  background:  #5C5676;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* 6. DESKTOP BREAKPOINT (≥768 px) */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #menu-toggle {
+    display: none;/* hide burger on larger screens */
+  }
+
+  #nav-links {
+    display: flex !important; /* always visible */
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+
+  .hero {
+    padding: 5rem 2rem 4rem;
+    height:700px;
+  }
+
+  .features {
+    padding: 3.5rem 2rem;
+  }
+}
+
+
+
+
+
+
+
+
+   
+
+    

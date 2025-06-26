@@ -3,48 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faithful Focus FeedBackPage</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Faithful Focus</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Mobile layout structure -->
-<header class="sunset">
-  <h1>Faithful Focus</h1>
-</header>
 
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="game.html">Game</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="feedback.html" class="active">Feedback</a></li>
-      <li><a href="journal.html">Journal</a></li>
-      <li><a href="focus.html">Focus</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h1>Faithful Focus</h1>
+    <p class="tagline">Create your sacred study space</p>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="study.html">Study</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="scripture-rotator">
-    <h2>Scripture for You</h2>
-    <p>"Be still, and know that I am God." — Psalm 46:10</p>
-</div>
-
-<main class="main-content">
-  <section>
-    <h3>Cozy Features</h3>
-    <ul>
-      <li>🎵 Ambient Music</li>
-      <li>📓 Scripture Journal</li>
-      <li>🧠 Study with Peace</li>
-    </ul>
+  <main>
+  <section class="center-wrapper">
+    <div class="hero" class="feedback-container" style="background: url('/Final-Project/images/leaves2.jpg') center/cover no-repeat;">
+      <h2>Feedback</h2>
+      <p>We'd love to hear your thoughts about Faithful Focus.</p>
+        <form onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+        <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
   </section>
-</main>
 
-  <footer class="sunset">
-    <p> placeholder for the music player</p>
+  <footer>
+    <p>“Draw near unto me and I will draw near unto you.” – D&C 88:63</p>
   </footer>
+  </main>
 
-
-
-<script src="java/script.js"></script>
+ <script src="scripts/javasript.js"></script>
 </body>
 </html>

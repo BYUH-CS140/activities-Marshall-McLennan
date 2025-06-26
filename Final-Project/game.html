@@ -3,45 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faithful Focus GamePage</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Faithful Focus</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Mobile layout structure -->
-<header class="classroom">
-  <h1>Faithful Focus</h1>
-</header>
-<nav>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="game.html" class="active">Game</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="feedback.html">Feedback</a></li>
-    <li><a href="journal.html">Journal</a></li>
-    <li><a href="focus.html">Focus</a></li>
-  </ul>
-</nav>
 
-<div class="scripture-rotator">
-    <h2>Scripture for You</h2>
-    <p>"Be still, and know that I am God." — Psalm 46:10</p>
-</div>
+  <header>
+    <h1>Faithful Focus</h1>
+    <p class="tagline">Create your sacred study space</p>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="study.html">Study</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main class="main-content">
-<section>
-  <h2>Interactive Focus Game</h2>
-  <p>We're building something fun to help you stay focused. Stay tuned!</p>
-</section>
-</main>
+   <section class="hero">
+    <h2>Collect the Coins</h2>
+    <p>Move the ball with arrow keys, collect as many coins as you can!</p>
+   </section>
 
+  <main class="game">
+    <div id="scoreBoard">Score: 0</div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <button id="resetBtn">Restart Game</button>
+  </main>
 
-
-  <footer class="classroom">
-    <p> placeholder for the music player</p>
+  <footer>
+    <p>“Draw near unto me and I will draw near unto you.” – D&C 88:63</p>
   </footer>
 
-
-
-<script src="java/script.js"></script>
+  <script src="scripts/javasript.js"></script>
 </body>
 </html>

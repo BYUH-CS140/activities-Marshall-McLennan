@@ -3,88 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faithful Focus AboutPage</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>About – Faithful Focus</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Mobile layout structure -->
-<header class="bedroom">
-  <h1>Faithful Focus</h1>
-</header>
-<nav>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="game.html">Game</a></li>
-    <li><a href="about.html" class="active">About</a></li>
-    <li><a href="feedback.html">Feedback</a></li>
-    <li><a href="journal.html">Journal</a></li>
-    <li><a href="focus.html">Focus</a></li>
-  </ul>
-</nav>
 
-<div class="scripture-rotator">
-    <h2>Scripture for You</h2>
-    <p>"Be still, and know that I am God." — Psalm 46:10</p>
-</div>
+  <header>
+    <h1>Faithful Focus</h1>
+    <p class="tagline">Create your sacred study space</p>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="study.html">Study</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="game.html">Game</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main class="main-content">
-  <section>
-    <h2>About Faithful Focus</h2>
-    <p><strong>Faithful Focus</strong> is a cozy scripture study website designed to promote peace, positivity, and focus. It offers a warm, calming interface where users can enjoy scripture study with ambient music and beautiful visuals.</p>
+  <main style="background: url('/Final-Project/images/wall.jpg') center/cover no-repeat;">
+    <section class="study-title">
+      <h2>About Faithful Focus</h2>
+      <p>A digital sanctuary for focus, reflection, and peace of mind.</p>
+    </section>
 
-  
-    <h3>Primary Purpose</h3>
-    <p>The goal is to provide a place where people can create a peaceful atmosphere for studying, reflecting, and resting. It supports mental health and emotional well-being by encouraging positive, uplifting spiritual engagement.</p>
-  
+    <section class="study-grid">
+      <div class="card">
+        <h2>Our Purpose</h2>
+        <p>Faithful Focus is designed to help college students aged 18–26 establish a consistent, uplifting study routine. Blending spiritual grounding with effective productivity strategies, this site offers a peaceful environment that supports academic success and emotional wellness.</p>
+      </div>
 
-  
-    <h3>Target Audience</h3>
-    <ul>
-      <li>College students (ages 18–26)</li>
-      <li>Students looking for a place to enjoy scriptures and study</li>
-    </ul>
-  
+      <div class="card">
+        <h2>Key Features</h2>
+        <ul class="tips-list">
+          <li><strong>Study Page:</strong> Guided reflection, daily focus input, and motivational quotes to help structure your study sessions.</li>
+          <li><strong>Journal:</strong> A quiet space to write thoughts, impressions, and experiences, promoting emotional processing and clarity.</li>
+          <li><strong>Game:</strong> A simple, fun coin-collecting game to take mindful breaks and boost your mental reset during long sessions.</li>
+          <li><strong>Scripture Rotator:</strong> Gentle reminders of truth and comfort that fade in and out on the homepage to uplift the spirit.</li>
+          <li><strong>Feedback Form:</strong> A way for you to shape the future of the site with your insights and suggestions.</li>
+        </ul>
+      </div>
 
-  
-    <h3>Key Features</h3>
+      <div class="card">
+        <h2>Mental Health Focus</h2>
+        <p>This site is rooted in the belief that consistent spiritual and mental habits build resilience. By offering calming visuals, cozy themes, and gentle encouragement, Faithful Focus encourages users to pause, breathe, and reflect—promoting mental clarity, emotional grounding, and personal growth.</p>
+      </div>
 
-    <h4>🎵 Music Player</h4>
-    <ul>
-      <li>Play/Pause music</li>
-      <li>Choose from peaceful playlists</li>
-      <li>Adjust volume</li>
-    </ul>
+      <div class="card">
+        <h2>For You, Wherever You Are</h2>
+        <p>Whether you’re in a dorm room, a library, or on the go, Faithful Focus is mobile-first and child-friendly. It adapts to your screen, your rhythm, and your spirit—providing structure when you need it and peace when you crave it.</p>
+      </div>
+    </section>
+  </main>
 
-    <h4>📓 Journal</h4>
-    <p>A space to write down reflections, thoughts, and inspiration.</p>
-
-    <h4>🎯 Focus Mode</h4>
-    <p>Minimal interface that hides UI, showing only the scripture and music.</p>
-
-    <h4>🖼️ Cozy Visuals</h4>
-    <ul>
-      <li>Forest desk view</li>
-      <li>Beach desk view</li>
-      <li>Busy city desk view</li>
-    </ul>
-
-    <h4>📖 Scripture Rotator</h4>
-    <ul>
-      <li>Displays a new scripture every 30–60 seconds</li>
-      <li>Categories: “Peace”, “Love”, “Strength”, “Wisdom”</li>
-      <li>Fade-in/out animations</li>
-    </ul>
-  </section>
-</main>
-
-
-
-  <footer class="bedroom">
-    <p> placeholder for the music player</p>
+  <footer>
+    <p>“Draw near unto me and I will draw near unto you.” – D&C 88:63</p>
   </footer>
 
-
-
-<script src="java/script.js"></script>
+  <script src="scripts/javasript.js"></script>
 </body>
 </html>
