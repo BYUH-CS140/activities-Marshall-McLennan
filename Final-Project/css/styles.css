@@ -84,6 +84,12 @@ nav {
   background: rgba(255,255,255,.15);
 }
 
+.about{
+  background: url('../images/wall.jpg') center/cover no-repeat;
+}
+.hero .feedback-container{
+  background: url('../images/leaves2.jpg') center/cover no-repeat;
+}
 
 /* hero(attention graber) section */
 .hero {
@@ -109,6 +115,10 @@ nav {
 
 .hero .study-container {
   color:#1E1E2F;
+}
+
+.feedback{
+  background: url("../images/leaves2.jpg") center/cover no-repeat;
 }
 
 .hero p {
