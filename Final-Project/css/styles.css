@@ -89,7 +89,7 @@ nav {
 .hero {
   text-align: center;
   padding: 2rem .75rem 2.5rem;
-  background: url("/Final-Project/images/mountain1.jpg") center/cover no-repeat;
+  background: url("../images/mountain1.jpg") center/cover no-repeat;
   color: #fff;
   border-radius: 20px;
 }
@@ -149,7 +149,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/Final-Project/images/landscape.jpg") center/cover no-repeat;
+  background: url("../images/landscape.jpg") center/cover no-repeat;
   padding:20px;
 }
 
